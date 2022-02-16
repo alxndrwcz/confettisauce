@@ -1,0 +1,118 @@
+/* Custom Fonts ***/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+  --dark-blue: #172F6C;
+  --medium-blue: #5a5c72;
+  --light-blue: #f4f4ff;
+  --dmsans: 'DM Sans', sans-serif;
+}
+
+.uk-container-xsmall {
+  max-width: 600px;
+}
+
+html {
+  background: var(--light-blue);
+}
+
+body {
+  font-family: var(--dmsans);
+  font-smooth: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.logo {
+  width: 25%;
+  height: auto;
+}
+
+h1 {
+  font-family: var(--dmsans);
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+p {
+  color: var(--medium-blue);
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+
+.intro-text {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.container-custom {
+  margin-top: 6.5rem;
+  padding-bottom: 2.8rem;
+}
+
+.uk-form-label {
+  color: var(--medium-blue);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.uk-input {
+  border-color: #bdc4d7;
+  border-radius: 4px;
+  padding: 12px 14px;
+  font-size: 16px;
+  height: auto;
+  color: var(--dark-blue);
+}
+
+.cs-button {
+  border-radius: 28px;
+  font-size: 1.2rem;
+  font-family: var(--dmsans);
+  font-weight: 700;
+  text-transform: none;
+  background-color: var(--dark-blue);
+  margin-top: 1.6rem;
+}
+
+.uk-navbar-container {
+  background: #172F6C !important;
+  height: 4rem;
+}
+
+.cs-logo-main {
+  width: 12rem;
+}
+
+.cs-input-group {
+  padding-bottom: 1rem;
+}
+
+@media (max-width:639px){
+  .cs-button {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .cs-logo-main {
+    width: 8rem;
+  }
+  .uk-navbar-container {
+    background: #172F6C !important;
+    height: 2.6rem;
+  }  
+  .container-custom {
+    margin-top: 5rem;
+    padding-bottom: 2.8rem;
+  }
+  .cs-input-group {
+    padding-bottom: 0.5rem;
+  }
+  .cs-button {
+    margin-top: 1rem;
+  }
+}
