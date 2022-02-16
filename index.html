@@ -4,24 +4,55 @@
         <title>Confetti Sauce</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+        <link rel="stylesheet" href="css/uikit.min.css" />
         <link rel="stylesheet" href="css/confettisauce.css" />
-        <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon@2x.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon@1x.png">
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
     </head>
     <body>
-        <nav class="uk-navbar-container" uk-navbar>
-            <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-logo" href="#">
-                    <img src="img/logo-outline@2x.png" alt="Confetti Sauce logo" class="cs-logo-main">
-                </a>
+      <div class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-center">
+            <a href="" class="uk-navbar-item uk-logo">
+              <img src="img/logo-outline@2x.png" alt="Confetti Sauce logo" class="cs-logo-main">
+            </a>
+        </div>
+      </div>
+      <div class="uk-container uk-container-xsmall container-custom">
+        <div uk-grid>
+          <div class="uk-width-1-1">
+            <div class="intro-text">
+              <h1>Let's get this party started.</h1>
+              <p>Fill out the form below and I'll get back to you within 48-72 hours. Fields marked with an asterisk (*) are required.</p>
             </div>
-            <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav">
-                    <li><a href="#">Item</a></li>
-                </ul>
-            </div>
-        </nav>
+            <form class="uk-grid-small" uk-grid action="https://formspree.io/f/mpzbddwn" method="POST">
+              <div class="uk-width-1-1 cs-input-group">
+                <label for="Name" class="uk-form-label">Name*</label>
+                <input name="Name" class="uk-input" type="text">
+              </div>
+              <div class="uk-width-1-1 cs-input-group">
+                <label for="Email" class="uk-form-label">Email*</label>
+                <input name="Email" class="uk-input" type="email">
+              </div>
+              <div class="uk-width-1-2@s cs-input-group">
+                <label for="Travel start date" class="uk-form-label">Travel start date</label>
+                <input name="Travel start date" type="date" class="uk-input">
+              </div>
+              <div class="uk-width-1-2@s cs-input-group">
+                <label for="Travel end date" class="uk-form-label">Travel end date</label>
+                <input name="Travel end date" type="date" class="uk-input">
+              </div>
+              <div class="uk-width-1-1 cs-input-group">
+                <label for="Message" class="uk-form-label">Message*</label>
+                <textarea name="Message" class="uk-input"></textarea>
+              </div>
+              <div class="uk-width-1-1 cs-input-group">
+                <button type="submit" class="uk-button uk-button-primary uk-button-large cs-button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </body>
 </html>
